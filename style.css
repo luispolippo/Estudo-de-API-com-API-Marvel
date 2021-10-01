@@ -1,0 +1,103 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  background-color: #e62429;
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.herosSection {
+  width: 100%;
+}
+
+.herosSection #herosList{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-align: center;
+}
+
+.herosSection .hero{
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(24, 24, 24);
+  margin-bottom: 10px;
+  color: white;
+  padding: 10px;
+}
+
+.herosSection .hero:hover {
+  background-color: rgb(40, 40, 40);
+}
+
+.pagesBtn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 30px 10px;
+  width: 100%;
+  background-color: #e62429;
+}
+
+.pagesBtn button {
+  width: 25px;
+  padding: 0 3px;
+  margin: 2px 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.pagesBtn button:hover {
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+
+.hero img {
+  height: 150px;
+  width: 150px;
+}
+
+.hero .pContainer {
+  width: 150px;
+}
+
+.hero .pContainer p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.loading {
+  height: 100px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: load;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes load {
+  from { opacity: 1; }
+  to { opacity: 0.5; }
+}
